@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+.main-header {
+    display: block;
+    margin: 2rem ;
+    text-align: center;
+    border-bottom: 1px solid #020202;
+}
+
+.main-header > i {
+    background-color: rgb(138, 133, 133);
+    padding: .2rem;
+    box-shadow: 2px 2px 0 rgb(94, 93, 93);
+}
+
+input {
+    width: 200px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 23px;
+}
