@@ -1,0 +1,30 @@
+
+button {
+    display: inle-flex;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #777;
+    padding: .3rem .6rem ;
+    border-radius: 50%;
+    align-items: center;
+    transition: .5s;
+    margin-left: 10px;
+}
+button i {
+    align-items: center;
+    ;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #333;
+        
+}
+
+button:hover i {
+    transform: scale(1.5);
+}
+
+#btn-edit-cnc {
+    margin-top: 10px;
+}

@@ -1,0 +1,26 @@
+.container {
+    display: block;
+    background-color: rgb(26, 25, 25);
+    max-width: 70%;
+    margin: 3rem auto 0;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 2px;
+}
+
+.form-container {
+    
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.form-container i {
+    display: inline-flex;
+    align-items: center;
+}
+
+

@@ -4,31 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Tarefas</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/assents/css/style.css">
-    <script src="/assents/js/script.js"></script>
+    <link rel="stylesheet" href="/assents/css/btn.css">
+    <link rel="stylesheet" href="/assents/css/container.css">
+    <link rel="stylesheet" href="/assents/css/list.css">
+    <script src="/assents/js/elements.js" defer></script>
+    <script src="/assents/js/function.js" defer></script>
+    <script src="/assents/js/events.js" defer></script>
+
 
 
 </head>
 <body>
-    <div>
-        <header class="main-header">
-            <h1>LISTA DE TAREFAS</h1>
-            <input type="text" class="lista">
-            <i class="fa-thin fa-plus"></i>
-        </header>
-    </div>
     
-    <div class="tarefas">
-
+    <div class="container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+        <form id="ctn-form">
+            <p>Adicione sua tarefa:</p>
+            <div class="form-container">
+                <input type="text" id="trf-in" placeholder="Qual a proxima tarefa?">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="ctn-form" class="hide">
+            <p>Editar Tarefa:</p>
+            <div class="form-container">
+                <input type="text" id="trf-edit">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="btn-edit-cnc">Cancelar</button>
+        </form>
+        <div id="trf-list">
+            <div class="trf">
+                <h3>Tarefa01</h3>
+                <button class="trf-remove">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+        
     </div>
     
 </body>
